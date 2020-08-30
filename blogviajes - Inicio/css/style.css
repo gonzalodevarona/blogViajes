@@ -1,0 +1,47 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+img{
+    max-width: 100%; /* esta línea hace que las imagenes sean responsivas, ya que siempre van a tomar máximo el 100% del espacio disponible*/
+}
+
+/** HEADER **/
+.site-header{
+    padding: 20px 0;
+}
+
+.contenedor{
+    max-width: 1200px;
+    margin: 0 auto; /* esto hace que  el contenido se distribuya horizontalmente en el espacio disponible*/
+}
+
+/** NAVEGACION **/
+
+.barra{
+    background-color: #db008d;
+}
+
+.navegacion-principal a {
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    display: block;
+    text-align: center;
+    padding: 20px 0;
+
+}
+
+@media (min-width: 768px) {
+    .navegacion-principal a {
+        
+        display: inline;
+       
+    
+    }
+
+    .barra{
+       height: 50px;
+    }
+    
+}
