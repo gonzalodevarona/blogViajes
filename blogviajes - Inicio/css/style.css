@@ -35,9 +35,16 @@ p{
 }
 /** HEADER **/
 .site-header{
-    
+    display: flex;
     padding: 50px 0 20px 0;
+    justify-content: space-evenly;
 }
+
+.site-header img{
+    max-width: 90%;
+}
+
+
 
 .contenedor{
     max-width: 1200px;
@@ -45,9 +52,42 @@ p{
     overflow: auto; /* este es el clear fix, limpia los floats para no tener problemas con los padding o margin */
 }
 
+/** NAVEGACION RESPONSIVE**/
+
+.mobile-menu{
+    color: #db008d;
+    font-size: 2rem;
+    padding: 2% 3% 0 0;
+
+}
+
+.navegacion-principal {
+    max-height: 0; /** esto oculta el contenedor de la barra para hacer un menú hamburgesa**/
+    overflow: hidden;  /** esto oculta los elementos de la barra para hacer un menú hamburgesa**/
+    transition: .5s;
+}
+
+#nav:target {
+    max-height: 800px;
+}
+
+@media(min-width: 768px){
+    
+    .navegacion-principal {
+        max-height: unset;
+    }
+
+    .mobile-menu, .close{
+        display: none!important;
+        
+    }
+}
+
+
 /** NAVEGACION **/
 
 .barra{
+    
     background-color: #db008d;
     margin-top: 20px;
 }

@@ -4,21 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog de Viajes</title>
+    <script src="https://kit.fontawesome.com/d8bc51a4c2.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header class="site-header contenedor">
-      <img src="img/logo.png" alt="Logo blog de viajes">  
+        <a href="index.html"> <img src="img/logo.png" alt="Logo blog de viajes"> </a>
+        
+      <a href="#nav" class="mobile-menu"><i class="fas fa-bars"></i></a>
+      
     </header>
 
     <div class="barra">
-        <nav class="navegacion-principal contenedor">
+
+        <nav id="nav" class="navegacion-principal contenedor">
             <a href="#">Inicio</a>
             <a href="#">Nosotros</a>
             <a href="#">Blog</a>
             <a href="#">Tienda</a>
             <a href="#">Contacto</a>
+            <a href="#" class="close"><i class="fas fa-times"></i></a>
         </nav>
     </div>
 
